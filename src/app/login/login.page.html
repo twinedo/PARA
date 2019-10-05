@@ -1,0 +1,26 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list text-center margin>
+        <ion-item lines="none" text-center>
+            <ion-title>Let's get Lost, ULaLaaaaa</ion-title>
+        </ion-item>
+        <ion-item>
+          <ion-label color="danger">Username</ion-label>
+          <ion-input type="text" [(ngModel)]="credentials.username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="danger">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="credentials.password"></ion-input>
+        </ion-item>
+        <br>
+        <ion-button margin color="danger" size="large" expand="block" (click)="login()">Login</ion-button>
+        <ion-text>Doesn't have an account yet? <a href="../register">Create one</a></ion-text>
+        <br>
+            <a href="">Forgot Password?</a>
+      </ion-list>
+</ion-content>
