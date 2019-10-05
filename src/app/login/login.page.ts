@@ -56,4 +56,8 @@ export class LoginPage implements OnInit {
     });
   }
 
+  forgotPass() {
+    this.router.navigate(['/login/forgotpass']);
+  }
+
 }

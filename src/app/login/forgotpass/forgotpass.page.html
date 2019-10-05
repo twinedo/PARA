@@ -1,0 +1,19 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button defaultHref="../login"></ion-back-button>
+      <ion-title>Forgot Password</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+      <ion-item margin>
+          <ion-label position="stacked" color="danger">Email</ion-label>
+          <ion-input required type="email"></ion-input>
+      </ion-item>
+      <ion-button margin color="danger" size="large" expand="block" (click)="sendRest()">Send</ion-button>
+  </ion-list>
+</ion-content>
+

@@ -10,17 +10,23 @@
             <ion-title>Let's get Lost, ULaLaaaaa</ion-title>
         </ion-item>
         <ion-item>
-          <ion-label color="danger">Username</ion-label>
-          <ion-input type="text" [(ngModel)]="credentials.username"></ion-input>
+          <ion-label position="stacked" color="danger">Username</ion-label>
+          <ion-input required type="text" [(ngModel)]="credentials.username"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label color="danger">Password</ion-label>
-          <ion-input type="password" [(ngModel)]="credentials.password"></ion-input>
+          <ion-label position="stacked" color="danger">Password</ion-label>
+          <ion-input required type="password" [(ngModel)]="credentials.password"></ion-input>
         </ion-item>
         <br>
         <ion-button margin color="danger" size="large" expand="block" (click)="login()">Login</ion-button>
-        <ion-text>Doesn't have an account yet? <a href="../register">Create one</a></ion-text>
-        <br>
-            <a href="">Forgot Password?</a>
+        <ion-button margin color="primary" size="large" expand="block" (click)="loginGoogle()">
+            <ion-icon name="logo-google" no-padding></ion-icon>
+            Login with Google
+          </ion-button>
+
+          <ion-text margin>Doesn't have an account yet? <ion-text color="danger">Create one</ion-text></ion-text>
+          <br>
+          <ion-text margin color="danger" (click)="forgotPass()">Forgot Password?</ion-text>
+
       </ion-list>
 </ion-content>
