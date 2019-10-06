@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-slides pager="true">
+    <ion-slide *ngFor="let slide of slides">
+      <div class="slide-img-padding">
+        <ion-img [src]="slide.img"></ion-img>
+      </div>
+      <div>
+        <h3>{{ slide.title }}</h3>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+
+<ion-footer no-border text-center>
+  <ion-button
+      margin
+      color="danger"
+      shape="round"
+      (click)="skip()"
+      >Skip</ion-button>
+
+</ion-footer>

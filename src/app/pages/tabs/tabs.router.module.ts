@@ -39,7 +39,7 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: '/tabs/essentials',
+    redirectTo: 'tabs/essentials',
     pathMatch: 'full'
   }
 ];
