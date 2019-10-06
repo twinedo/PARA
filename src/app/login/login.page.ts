@@ -31,7 +31,7 @@ export class LoginPage implements OnInit {
   ionViewDidLoad() {
     const status = localStorage.getItem('isLogin');
     if (status === 'true') {
-      this.router.navigate(['/pages/tabs/essentials']);
+      this.router.navigate(['../pages/tabs/essentials']);
     }
   }
 
@@ -43,7 +43,7 @@ export class LoginPage implements OnInit {
         position: 'bottom'
       }).then(toast => {
         toast.present();
-        this.router.navigate(['/home/tabs/essentials']);
+        this.router.navigate(['../pages/essentials/essentials']);
       });
     }).catch((error) => {
       this.toast.create({
@@ -58,6 +58,10 @@ export class LoginPage implements OnInit {
 
   forgotPass() {
     this.router.navigate(['/login/forgotpass']);
+  }
+
+  gotoSignUp() {
+    this.router.navigate(['/signup']);
   }
 
 }

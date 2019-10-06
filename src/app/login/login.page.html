@@ -5,8 +5,8 @@
 </ion-header>
 
 <ion-content>
-    <ion-list text-center margin>
-        <ion-item lines="none" text-center>
+    <ion-list class="ion-text-center ion-margin">
+        <ion-item lines="none" class="text-center">
             <ion-title>Let's get Lost, ULaLaaaaa</ion-title>
         </ion-item>
         <ion-item>
@@ -18,15 +18,15 @@
           <ion-input required type="password" [(ngModel)]="credentials.password"></ion-input>
         </ion-item>
         <br>
-        <ion-button margin color="danger" size="large" expand="block" (click)="login()">Login</ion-button>
-        <ion-button margin color="primary" size="large" expand="block" (click)="loginGoogle()">
-            <ion-icon name="logo-google" no-padding></ion-icon>
+        <ion-button class="ion-margin" color="danger" size="large" expand="block" (click)="login()">Login</ion-button>
+        <ion-button class="ion-margin" color="primary" size="large" expand="block" (click)="loginGoogle()">
+            <ion-icon name="logo-google" class="ion-no-padding"></ion-icon>
             Login with Google
           </ion-button>
 
-          <ion-text margin>Doesn't have an account yet? <ion-text color="danger">Create one</ion-text></ion-text>
+          <ion-text class="margin" (click)="gotoSignUp()">Doesn't have an account yet? <ion-text color="danger">Create one</ion-text></ion-text>
           <br>
-          <ion-text margin color="danger" (click)="forgotPass()">Forgot Password?</ion-text>
+          <ion-text class="margin" color="danger" (click)="forgotPass()">Forgot Password?</ion-text>
 
       </ion-list>
 </ion-content>

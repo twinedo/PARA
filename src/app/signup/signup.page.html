@@ -1,0 +1,36 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title>Signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content margin>
+  <ion-list text-center>
+    <ion-item>
+      <ion-label position="stacked" color="danger">Firstname</ion-label>
+      <ion-input required type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="danger">Lastname</ion-label>
+      <ion-input required type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="danger">Email</ion-label>
+      <ion-input required type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="danger">Password</ion-label>
+      <ion-input required type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="danger">Retype Password</ion-label>
+      <ion-input required type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="danger">Nationality</ion-label>
+      <ion-input required type="text"></ion-input>
+    </ion-item>
+    <ion-button class="ion-margin" color="danger" size="large" expand="block" (click)="signup()">SignUp</ion-button>
+    <ion-text (click)="gotoLogin()">Have an account? Just Login <ion-text color="danger">here</ion-text></ion-text>
+  </ion-list>
+</ion-content>
